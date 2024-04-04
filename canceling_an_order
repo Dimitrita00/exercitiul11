@@ -1,0 +1,8 @@
+Feature: Canceling an Order on OLX.ro
+
+  Scenario: User cancels an order on OLX.ro
+    Given I am logged in to my OLX.ro account
+    And I navigate to the "My Orders" section
+    When I find the order with ID "12345"
+    And I click on the "Cancel Order" button
+    Then I should see a confirmation message for order cancellation
