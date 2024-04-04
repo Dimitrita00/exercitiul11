@@ -1,0 +1,10 @@
+Feature: Placing an Order on OLX.ro
+
+  Scenario: User places an order on OLX.ro
+    Given I am on the OLX.ro website
+    When I search for the product "smartphone"
+    And I select the first product from the search results
+    And I click on the "Contact" button
+    And I fill in the contact form with my details
+    And I submit the form
+    Then I should see a confirmation message indicating the order placement
